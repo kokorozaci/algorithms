@@ -2,10 +2,10 @@
 вывести уравнение прямой вида y = kx + b, проходящей через эти точки"""
 
 print('Вевдите координаты 2-х точек')
-x1 = int(input('Введите x1: '))
-y1 = int(input('Введите y1: '))
-x2 = int(input('Введите x2: '))
-y2 = int(input('Введите y2: '))
+x1 = float(input('Введите x1: '))
+y1 = float(input('Введите y1: '))
+x2 = float(input('Введите x2: '))
+y2 = float(input('Введите y2: '))
 k = (y1-y2)/(x1-x2)
 b = y1-k*x1
 print(f'y = {k} x + {b}')
