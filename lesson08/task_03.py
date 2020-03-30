@@ -45,3 +45,10 @@ new_graph = create_graph_2(n)
 print(f'Граф: {new_graph}')
 v = int(input('Введите вершину от которой начать обход: '))
 print(dfs(new_graph, v))
+# все вершины
+all_path = []
+for v in range(len(new_graph)):
+    all_path.append(dfs(create_graph(n), v))
+print('Простой граф', create_graph(n))
+print(*all_path, sep='\n')
+
